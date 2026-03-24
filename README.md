@@ -20,13 +20,14 @@ Funding Opportunity Announcements (FOAs) are distributed across multiple sources
 
 ### Architecture
 
+```
 URL → Router
-         ├── API → valid → Output
-         │        ↓ invalid
-         └── HTML → valid → Output
-                  ↓ invalid
-               Partial Fallback
-
+├── API → valid → Output
+│   ↓ invalid
+└── HTML → valid → Output
+    ↓ invalid
+    Partial Fallback
+```
 
 ## Installation
 
@@ -91,7 +92,7 @@ Structured outputs: Enables downstream automation and analysis
 
 - `grants.gov/search-results-detail/` pages return an anti-bot interstitial 
   and cannot be scraped — returns `extraction_status: failed` gracefully.
-  
+
 - `grants.gov` API backend (`apply07.grants.gov`) is currently unavailable, 
   returning a 200 OK with an internal failure message — detected and handled explicitly.
 
