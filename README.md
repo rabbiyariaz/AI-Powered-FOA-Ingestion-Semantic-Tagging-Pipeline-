@@ -1,7 +1,12 @@
 # AI-Powered Funding Intelligence  
 
 ## FOA Ingestion + Semantic Tagging Pipeline
-A production-ready FOA ingestion pipeline with resilient API fallback and deterministic semantic tagging.
+A production-ready FOA ingestion pipeline that converts unstructured grant data into structured, searchable intelligence.
+
+## 🎥 Demo
+
+[Watch Demo](https://youtu.be/zb7ml9n1hDg)
+
 ### Overview
 Funding Opportunity Announcements (FOAs) are distributed across multiple sources, often in inconsistent formats and structures. This project implements a modular pipeline that ingests FOAs from public sources, extracts structured fields, and applies ontology-based semantic tagging to support downstream research discovery and grant matching.
 
@@ -17,6 +22,14 @@ Funding Opportunity Announcements (FOAs) are distributed across multiple sources
 - Robust handling of incomplete or restricted data sources
 
 ---
+
+```markdown
+## Why This Matters
+
+- FOAs are scattered and unstructured across multiple sources  
+- Researchers spend hours manually searching  
+- This system automates discovery and enables structured intelligence  
+
 
 ### Architecture
 
@@ -40,22 +53,27 @@ python main.py --url "https://simpler.grants.gov/opportunity/77242ec4-56ad-4784-
 - `out/foa.json`: pretty-formatted JSON
 - `out/foa.csv`: single-row CSV
 
-Example schema:
+## 📊 Sample Output
 
 ```json
 
 {
-  "foa_id": "...",
-  "title": "...",
-  "agency": "...",
-  "open_date": "...",
-  "close_date": "...",
-  "eligibility": "...",
-  "description": "...",
-  "award_range": "...",
-  "url": "...",
-  "tags": ["..."],
-  "extraction_status": "complete | partial | failed"
+  "foa_id": "AFPMB-BAA-26-01",
+  "title": "Opportunity Listing - Deployed Warfighter Protection (DWFP) Program for the Protection of Deployed Military Personnel from Threats Posed by Arthropod Disease Vectors",
+  "agency": "ACC-APG-Detrick",
+  "open_date": "2025-11-19",
+  "close_date": "",
+  "eligibility": "Unrestricted",
+  "description": "The DWFP Program’s mission is to protect deployed military personnel from arthropod vectors of medically relevant disease pathogens, including (but not limited to) arthropod disease vectors of tick-borne pathogens and mosquito-borne arboviruses, as well as nuisance biting arthropods and emerging arthropod threats such as the New World Screwworm fly. The DWFP Program seeks to fund original and innovative research that supports the Advanced Technology Development of new insecticides, or improved formulations of existing insecticides for vector control, new technology or enhanced modalities of personal protection from biting arthropods, or improved efficacy and sustainability of equipment for application of pesticides.",
+  "award_range": "$-- - $975,000",
+  "url": "https://simpler.grants.gov/opportunity/a9f27238-998f-47f7-81f3-6dab3247d79b",
+  "tags": [
+    "Healthcare",
+    "Environment",
+    "Defense/Security",
+    "Research"
+  ],
+  "extraction_status": "complete"
 }
 
 ```
@@ -108,9 +126,6 @@ python main.py --url "https://simpler.grants.gov/opportunity/77242ec4-56ad-4784-
 python main.py --url "https://simpler.grants.gov/opportunity/a9f27238-998f-47f7-81f3-6dab3247d79b" --out_dir ./out
 
 
-python main.py --url "https://simpler.grants.gov/opportunity/ca2f980d-ecba-45f8-ae68-2c49eda57b92" --out_dir ./out
-
-
 
 # Traditional format
 python main.py --url "https://www.grants.gov/search-results-detail/350094" --out_dir ./out
@@ -124,6 +139,12 @@ python main.py --url "https://www.grants.gov/search-results-detail/350094" --out
 | `simpler.grants.gov/opportunity/a9f27238...` | ✅ complete | HTML scraper (4/4 fields) |
 | `simpler.grants.gov/opportunity/ca2f980d...` | ✅ complete | HTML scraper (4/4 fields) |
 | `grants.gov/search-results-detail/350094` | ⚠️ failed | API backend down + bot protection |
+
+## Key Strengths
+
+- Handles real-world edge cases (API failure, UUID routing, bot protection)
+- Deterministic and reproducible pipeline
+- Modular and extensible architecture
 
 ## Future Improvements
 Add additional FOA sources (NIH, NSF)
