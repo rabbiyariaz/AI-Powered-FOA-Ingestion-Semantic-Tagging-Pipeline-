@@ -20,14 +20,8 @@ Funding Opportunity Announcements (FOAs) are distributed across multiple sources
 
 ### Architecture
 
-```
-URL → Router
-├── API → valid → Output
-│   ↓ invalid
-└── HTML → valid → Output
-    ↓ invalid
-    Partial Fallback
-```
+![Architecture Diagram](Picture3.png)
+
 
 ## Installation
 
