@@ -58,24 +58,24 @@ python main.py --url "https://simpler.grants.gov/opportunity/77242ec4-56ad-4784-
 ```json
 
 {
-  "foa_id": "AFPMB-BAA-26-01",
-  "title": "Opportunity Listing - Deployed Warfighter Protection (DWFP) Program for the Protection of Deployed Military Personnel from Threats Posed by Arthropod Disease Vectors",
-  "agency": "ACC-APG-Detrick",
-  "open_date": "2025-11-19",
+  "foa_id": "BAA-AFRL-AFOSR-2016-0008",
+  "title": "Opportunity Listing - Air Force Defense Research Sciences Conference and Workshop Support",
+  "agency": "Air Force Office of Scientific Research",
+  "open_date": "2016-07-22",
   "close_date": "",
-  "eligibility": "Unrestricted",
-  "description": "The DWFP Program’s mission is to protect deployed military personnel from arthropod vectors of medically relevant disease pathogens, including (but not limited to) arthropod disease vectors of tick-borne pathogens and mosquito-borne arboviruses, as well as nuisance biting arthropods and emerging arthropod threats such as the New World Screwworm fly. The DWFP Program seeks to fund original and innovative research that supports the Advanced Technology Development of new insecticides, or improved formulations of existing insecticides for vector control, new technology or enhanced modalities of personal protection from biting arthropods, or improved efficacy and sustainability of equipment for application of pesticides.",
-  "award_range": "$-- - $975,000",
-  "url": "https://simpler.grants.gov/opportunity/a9f27238-998f-47f7-81f3-6dab3247d79b",
+  "eligibility": "Nonprofits non-higher education without 501(c)(3) | Nonprofits non-higher education with 501(c)(3) | Public and state institutions of higher education | Private institutions of higher education | Other",
+  "description": "Broad Agency Announcement FA955025S0001 and BAA-AFRL-AFOSR-2016-0008 are closed as of 23 March 2026 due to a new mandatory review process, as required by Executive Order 14332 Improving Oversight of Federal Grantmaking – March 2026. The upcoming Open BAA will be posted at a date later to be determined. ATTENTION ALL GRANTEES: If you submitted your proposal to BAA FA955025S0001 and BAA-AFRL-AFOSR-2016-0008 during the dates 18 March 2026 – 23 March 2026, you must resubmit your proposal to the upcoming Open BAA. The new Open BAA will ensure that all Department of the Air Force (DAF) assistance awards align with Department of War (DoW) priorities, serve the national interest, and adhere to applicable laws and regulations. The Air Force Office of Scientific Research manages the basic research investment for the U.S. Air Force. Conferences and workshops constitute key forums for research and technology interchange. We provide partial support for conferences and workshops as defined in the DoD Joint Travel Regulations in special areas of science that bring experts together to discuss recent research or educational findings, or to expose other researchers or advanced graduate students to new research and educational techniques in our areas of research interest. Our research interests are described in the most recent version of our general Broad Agency Announcement titled, “Research Interests of the Air Force Office of Scientific Research” posted on Grants.gov. We can only consider funding requests from U.S. institutions of higher education (IHE) or nonprofit organizations as described in 2 CFR 25.345, including foreign public entities and foreign organizations operated primarily for scientific, educational, service, charitable, or similar purposes in the public interest. We do not award grants to organizations with a for-profit organization type. Our support for a workshop or conference is not an endorsement of any organization.Our financial support through grants for confe",
+  "award_range": "$1 - $1,000,000",
+  "url": "https://simpler.grants.gov/opportunity/77242ec4-56ad-4784-84ca-066b30d01fae",
   "tags": [
-    "Healthcare",
-    "Environment",
+    "Education",
     "Defense/Security",
-    "Research"
+    "Research",
+    "Funding",
+    "International"
   ],
   "extraction_status": "complete"
 }
-
 ```
 
 ### Semantic Tagging
