@@ -23,7 +23,7 @@ Funding Opportunity Announcements (FOAs) are distributed across multiple sources
 
 ---
 
-```markdown
+
 ## Why This Matters
 
 - FOAs are scattered and unstructured across multiple sources  
