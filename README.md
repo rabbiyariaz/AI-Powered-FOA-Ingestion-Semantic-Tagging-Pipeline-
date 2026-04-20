@@ -8,6 +8,9 @@ A production-ready FOA ingestion pipeline that converts unstructured grant data 
 ### Overview
 Funding Opportunity Announcements (FOAs) are distributed across multiple sources, often in inconsistent formats and structures. This project implements a modular pipeline that ingests FOAs from public sources, extracts structured fields, and applies ontology-based semantic tagging to support downstream research discovery and grant matching.
 
+## 🎥 Demo
+
+[Watch Demo](https://youtu.be/mehoOYLFQr8)
 ---
 
 ### Features
